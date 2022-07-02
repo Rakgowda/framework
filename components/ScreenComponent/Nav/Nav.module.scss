@@ -1,0 +1,27 @@
+@use "../../../styles/mixin.scss" as mx;
+.nav > div{
+@include mx.margin-bottom(20px);
+transition: .5s ease;
+text-align: center;
+&:hover{
+    // position: relative;
+    // left: 10px;
+    // color: red;
+    font-size: 1.3rem;
+    // transform: scale(1.2);
+    background-color: var(--secondary);
+    color: var(--primary);
+    @include mx.padding(.5rem)
+}
+}
+.nav{
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+.selectedNav{
+    font-size: 1.3rem;
+    background-color: var(--secondary);
+    color: var(--primary);
+    @include mx.padding(.5rem)
+}

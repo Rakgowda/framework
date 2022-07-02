@@ -1,0 +1,28 @@
+$primary:black;
+$secondary:#ffffff;
+
+// list of colors
+$getColor:(
+    "green":#069A8E,
+    "red":#EB5353,
+    "primary":$primary,
+    "secondary":$secondary,
+    "white":white
+
+);
+
+$display:(
+    none:"none",
+    inline:"inline",
+    hidden:"gidden"
+);
+
+$base-font-size:1rem;
+$font-size-sm:1rem * .75;
+$font-size-lg:1rem * 1.75;
+$base-margin:1rem;
+$base-border:1px;
+$base-border-color:map-get($getColor, "red");
+$base-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$base-z-index:10;
+

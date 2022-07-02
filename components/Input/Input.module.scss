@@ -1,0 +1,17 @@
+.buttonDefaultStyle{
+    border: 1px solid var(--primary)
+    {
+        radius: 1rem
+    }
+    color: var(--primary);
+    font-size: 1rem;
+    background-color: var(--secondary);
+}
+.buttonDefaultStyle:focus{
+    outline: none !important;
+    border: 2px solid var(--primary){
+        radius: 1rem;
+    }
+    
+}
+

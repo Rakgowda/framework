@@ -1,0 +1,36 @@
+// Text
+.text-center{
+    text-align: center;
+  }
+  
+.text-wrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.b{
+    font-weight: bold;
+  }
+  
+
+  @for $i from 1 through 5{
+    .f-#{$i}{
+      font-size:#{$i}rem;
+    }
+  }
+
+  .relative{
+    position: relative;
+  }
+  .text-editable{
+    -webkit-user-modify:read-write;
+    border: ($base-border * 3) solid $base-border-color;
+    display: inline;
+  }
+
+  @each $color in map-keys($map: $getColor) {
+    .text-#{$color}{
+        color: map-get($getColor, $color)
+    };
+}

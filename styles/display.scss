@@ -1,0 +1,5 @@
+@each $var in map-keys($map: $display) {
+    .display-#{$var}{
+        display: $var;
+    }
+}

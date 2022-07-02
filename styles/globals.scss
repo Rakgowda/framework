@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
+@import "./variables.scss";
+@import "./text.scss";
+@import "./flex.scss";
+@import "./spacing.scss";
+@import "./color.scss";
+@import "./position.scss";
+@import "./display.scss";
+html{
+  font-size: 16px;
+  background-color: var(--secondary);
+  font-family: 'Open Sans', sans-ser
+}
+body{
+  margin: 0px !important;
+}
+
+%padding{
+    padding: .3rem ;
+}
+
+.rotate-180{
+  transform: rotate(180deg);
+}
+
+ :root{
+    --primary:#{$primary};
+    --secondary:#{$secondary};  
+  }
+
+

@@ -1,0 +1,36 @@
+@use "../../styles/mixin.scss" as mx;
+
+@mixin defaultBehaviour {
+    text-align: center;
+    width:5rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: .9rem;
+}
+
+.default{
+    
+    height: 1.5rem;
+    position: relative;
+    @include defaultBehaviour();
+    @include mx.flex(space-around,center)
+}
+
+.item{
+    @include defaultBehaviour();
+    position: absolute;
+    background-color: var(--secondary);
+    z-index: 1000;
+}
+.disabled{
+   @include mx.disabled
+}
+.arrow{
+    // position: relative;
+    // top: 6px;
+}
+
+.itemList{
+    position: relative;
+}
+

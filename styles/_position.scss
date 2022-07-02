@@ -1,0 +1,39 @@
+.pos-relative
+{
+    position: relative;
+}
+
+.pos-absolute
+{
+    position: absolute;
+}
+
+.pos-sticky
+{
+    position: sticky;
+}
+
+@for $i from 0 through 10{
+// position
+    .right-#{$i}{
+      right: #{$i}px;
+    }
+
+    .top-#{$i}{
+        top: #{$i}px;
+      }
+
+      .top-per-#{$i}{
+        top: $i*10%;
+      }
+
+      .left-per-#{$i}{
+        left: $i*10%;
+      }
+
+      .z-#{$i}{
+          z-index:$i*$base-z-index;
+      }
+  
+
+}

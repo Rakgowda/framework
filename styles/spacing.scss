@@ -1,0 +1,60 @@
+
+@for $i from 1 through 10{
+  // padding
+  .p-rem-#{$i}{
+    padding: #{$i}rem;
+  }
+  .p-#{$i}{
+    padding: #{$i}px;
+  }
+  .pt-#{$i}{
+    padding-top: #{$i}px;
+  }
+  .pr-#{$i}{
+    padding-right: #{$i}px;
+  }
+  .pb-#{$i}{
+    padding-bottom: #{$i}px;
+  }
+  .pl-#{$i}{
+    padding-left: #{$i}px;
+  }
+
+// margin
+  .m-#{$i}{
+    margin: #{$i}px;
+  }
+  .mt-#{$i}{
+    margin-top: #{$i}px;
+  }
+  .mr-#{$i}{
+    margin-right: #{$i}px;
+  }
+  .mb-#{$i}{
+    margin-bottom: #{$i}px;
+  }
+  .ml-#{$i}{
+    margin-left: #{$i}px;
+  }
+
+  .border-width-#{$i}{
+    border-width: #{$i}px;
+  }
+}
+
+@each $color in map-keys($map: $getColor) {
+  .border-#{$color}{
+      border-color: map-get($getColor, $color)
+  };
+
+}
+
+.border-style-solid{
+  border-style:solid ;
+}
+
+.box-shadow-default{
+  box-shadow:$base-shadow;
+}
+
+

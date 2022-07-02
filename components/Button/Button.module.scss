@@ -1,0 +1,22 @@
+
+@use "../../styles/mixin.scss" as mx;
+
+.primarybuttonStyle, .secondarybuttonStyle:active{
+    color: var(--secondary);
+    background-color: var(--primary);
+    border: mx.$secondary-border;
+}
+.buttonDefaultStyle{
+    padding: .3rem;
+    border-radius: 0.3rem;
+}
+.secondarybuttonStyle , .primarybuttonStyle:active{
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: mx.$primary-border;
+}
+
+
+.buttonDisableStyle{
+    @include mx.disabled 
+}

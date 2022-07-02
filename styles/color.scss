@@ -1,0 +1,12 @@
+@use "./_variables.scss" as c;
+
+@each $color in map-keys($map: $getColor) {
+    .#{$color}{
+        color: map-get($getColor, $color)
+    };
+    .background-#{$color}{
+        background-color: map-get($getColor, $color)
+    };
+}
+
+

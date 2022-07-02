@@ -1,0 +1,25 @@
+$secondary-border :1px solid var(--secondary);
+$primary-border : 1px solid var(--primary);
+
+@mixin disabled{
+    opacity: 50%;
+    cursor: not-allowed !important;
+  }
+
+@mixin flex($justify,$align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin padding($padding) {
+  padding: $padding;
+}
+
+@mixin padding-bottom($val) {
+  padding-bottom: $val;
+}
+
+@mixin margin-bottom($val) {
+  margin-bottom: $val;
+}
